@@ -13,7 +13,7 @@ import Welcome from './components/Welcome';
 //import Userlogin from './components/Userlogin';
 //import Showimg from './components/Showimg';
 //import Swiperimg from './components/Swiperimg';
-import TabviewOne from './components/TabviewOne';
+//import TabviewOne from './components/TabviewOne';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -27,8 +27,7 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Welcome />
-        <TabviewOne />
+        <Welcome /> 
       </View>
     );
   }
