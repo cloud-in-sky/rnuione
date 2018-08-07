@@ -10,9 +10,10 @@ import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 
 import Welcome from './components/Welcome';
+
 //import Userlogin from './components/Userlogin';
 //import Showimg from './components/Showimg';
-//import Swiperimg from './components/Swiperimg';
+import Swiperimg from './components/Swiperimg';
 //import TabviewOne from './components/TabviewOne';
 
 const instructions = Platform.select({
@@ -27,7 +28,8 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Welcome /> 
+        <Welcome />
+        <Swiperimg />
       </View>
     );
   }
@@ -45,7 +47,7 @@ const styles = StyleSheet.create({
     fontSize: 48,
     textAlign: 'center',
     margin: 10,
-    color: 'red',
+    color: 'blue',
   },
   instructions: {
     textAlign: 'center',

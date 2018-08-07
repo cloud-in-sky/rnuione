@@ -9,10 +9,15 @@ import Swiper from 'react-native-swiper';
 var screenwidth = Dimensions.get('window').width;
 
 export default class Swiperimg extends Component {
+
+    componentDidMount() {
+
+    }
+
     render() {
         return (
             <View style={styles.container}>
-                <Swiper style={styles.wrapper} height={240} showsButtons>
+                <Swiper style={styles.wrapper} height={240} showsButtons={true} autoplay={true} width={screenwidth - 20} loop={true}>
                     <View style={styles.slide} title={<Text numberOfLines={1}>HP Elitebook 8460p Notebook</Text>}>
                         <Image resizeMode='contain' style={styles.image}
                             source={{ uri: 'https://www.pbtech.co.nz/imgprod/E/X/EXNBKHP84601__1.jpg' }} />
@@ -49,6 +54,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         backgroundColor: 'transparent'
+        /* backgroundColor: 'red' */
     },
 
     text: {

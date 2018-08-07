@@ -30,4 +30,4 @@ Awesome React Native components
 https://github.com/jondot/awesome-react-native 
 
 
-:) Thanks to everyone :+1:
+### :) Thanks to everyone :+1:
