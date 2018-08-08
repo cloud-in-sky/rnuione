@@ -13,7 +13,7 @@ import Welcome from './components/Welcome';
 
 //import Userlogin from './components/Userlogin';
 //import Showimg from './components/Showimg';
-import Swiperimg from './components/Swiperimg';
+//import Swiperimg from './components/Swiperimg';
 //import TabviewOne from './components/TabviewOne';
 
 const instructions = Platform.select({
@@ -29,7 +29,6 @@ export default class App extends Component<Props> {
     return (
       <View style={styles.container}>
         <Welcome />
-        <Swiperimg />
       </View>
     );
   }
